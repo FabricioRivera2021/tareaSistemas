@@ -12,7 +12,10 @@ $query = mysqli_query($conexion, $sql);
         extract($row);
         $arrayItem = array(
             'id' => $id,
-            'nombre' => $nombre
+            'nombre' => $nombre,
+            'desc' => $desc,
+            'img' => $img,
+            'precio' => $precio
         );
         array_push($resp, $arrayItem);
     }
